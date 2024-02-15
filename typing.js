@@ -245,7 +245,7 @@ function update_cpm(){
     document.querySelector(".measure-wpm").innerHTML=cpm;
 }
 
-var para="The hefty opinion reveals itself as a sterile peer-to-peer to those who look. This could be, or perhaps the watch of a diamond becomes a bosom baboon. In recent years, some posit the unstuffed road to be less than altern. It's an undeniable fact, really; the livelong lettuce reveals itself as an unstuffed soda to those who look. In ancient times a bit is a balance's season. A baby is a shingle from the right perspective. Before defenses, collars were only operations. Bails are gleesome relatives. An alloy is a streetcar's debt. A fighter of the scarecrow is assumed to be a leisured laundry. A stamp can hardly be considered a peddling payment without also being a crocodile. A skill is a meteorology's ";
+var para="The hefty opinion reveals itself as a sterile peer-to-peer to those who look. This could be, or perhaps the watch of a diamond becomes a bosom baboon. In recent years, some posit the unstuffed road to be less than altern. It's an undeniable fact, really; the livelong lettuce reveals itself as an unstuffed soda to those who look. In ancient times a bit is a balance's season. A baby is a shingle from the right perspective. Before defenses, collars were only operations. Bails are gleesome relatives. An alloy is a streetcar's debt. A fighter of the scarecrow is assumed to be a leisured laundry. A stamp can hardly be considered a peddling payment without also being a crocodile. A skill is a meteorology's fan";
 
 
 
@@ -263,6 +263,7 @@ if (rand_key == "") {
     setCookie("random_keys",rand_key);
 } 
 
+let sub_caret=`<span class="contest-sub-text-caret"></span>`;
 let cpm;
 var countdownTime = 10 * 60;
 let interval;
@@ -450,7 +451,7 @@ document.addEventListener('keydown',e=>{
         alert("Hey, don't you even think about leaving this cosmic spectacle! We've got more pixels than a constellation, more drama than a soap opera, and more laughs than a stand-up comedy show on Jupiter! So, sit back, relax, and enjoy the ride - your screen's not going anywhere, and neither are you! ");
         console.log("Ctrl + R detected");
     }
-    document.getElementsByClassName("contest-sub-content")[0].innerHTML=real_text;
+    document.getElementsByClassName("contest-sub-content")[0].innerHTML=real_text+"&nbsp"+sub_caret;
     word_count=real_text.length;
     update_cpm();
 })
