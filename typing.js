@@ -236,7 +236,7 @@ function starter(){
 function update_cpm(){
     cpm;
     if(10-minutes!=0 && minutes!=undefined){
-        cpm=Math.floor(word_count/(1-minutes));
+        cpm=Math.floor(word_count/(10-minutes));
     }
     else{
         cpm=0;
