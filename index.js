@@ -37,3 +37,9 @@ var user = getCookie("username");
 if (user != "") {
     location.href = "speed-type.html";
 }
+
+document.getElementById("intro-name").addEventListener('keydown',e=>{
+    if(e.key==='Enter'){
+        startfunction();
+    }
+})
