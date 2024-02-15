@@ -1,0 +1,307 @@
+@font-face {
+    font-family: myFFont;
+    src: url("../fonts/FontsFree-Net-Art-nuvo.ttf");
+}
+@font-face {
+    font-family: mySFont;
+    src: url("../fonts/NixieOne-Regular.ttf");
+}
+@font-face {
+    font-family: myTFont;
+    src: url("../fonts/norwester.otf");
+}
+@font-face {
+    font-family: myFoFont;
+    src: url("../fonts/Carollo-Playscript-Medium.otf");
+}
+@font-face {
+    font-family: myFiFont;
+    src: url("../fonts/RobotoSlab-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: mySiFont;
+    src: url("../fonts/Carollo-Playscript-Regular-Italic.otf");
+}
+@font-face {
+    font-family: mySeFont;
+    src: url("../fonts/Carollo-Playscript-Medium-Italic.otf");
+}
+
+
+*{
+    margin: 0px;
+}
+body{
+    background-image: url(../images/TestStorm-bg.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.result-body{
+    overflow: hidden;
+}
+#background-video {
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.type_storm_video-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.8);
+}
+
+
+.type_storm-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
+}
+.intro-heading{
+    margin-top: 40px;
+    font-family: "myFFont";
+    color: #c2c2c2;
+    font-size: 70pt;
+    text-align: center;
+    cursor: default;
+}
+.intro-heading h1::selection{
+    background: none;
+}
+.intro-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#intro-name{
+    height: 55px;
+    font-size: 21pt;
+    width: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #d1d1d1;
+    font-family: "mySFont";
+    font-weight: 600;
+    border:none;
+    border-radius: 30px;
+}
+#intro-name::placeholder{
+    color: #4d4d4d;
+}
+#intro-name::selection{
+    background-color: black;
+    color: #d1d1d1;
+}
+#intro-btn{
+    margin-top: 55px;
+    font-family: "myTFont";
+    font-size: 22pt;
+    height: 55px;
+    width: 140px;
+    border-radius: 30px;
+    color: #d1d1d1;
+    background: none;
+    border: 3px solid #d1d1d1;
+}
+#intro-btn:hover{
+    background-color: #d1d1d1;
+    color: black;
+}
+.intro-logos{
+    position: fixed;
+    bottom: 1px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #d1d1d1;
+    font-size: 20pt;
+    font-family: "myFoFont";
+    cursor: default;
+}
+.intro-logo-event{
+    margin-left: 5px;
+}
+.intro-logo-event::selection{
+    background: none;
+}
+.intro-logo-fest::selection{
+    background: none;
+}
+.intro-logo-fest{
+    margin-right: 5px;
+}
+
+.contest-heading{
+    color: #b7b7b7;
+    font-family: "myFFont";
+    font-size: 35px;
+    margin-top: 15px;
+    margin-left: 25px;
+    cursor: default;
+}
+.contest-heading h1::selection{
+    background: none;
+}
+
+.contest-main{
+    color: #b7b7b7;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-family: "myFiFont";
+    margin-left: 50px;
+}
+.contest-main-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 100px;
+    margin-top: 20px;
+    position: absolute;
+}
+.contest-timer{
+    width: 150px;
+    height: 60px;
+    background:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35pt;
+    border: 3px solid #b7b7b7;
+    border-radius: 20px;
+}
+.contest-timer-label{
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+.contest-main-2{
+    margin-left: 350px;
+}
+
+.contest-main-container{
+    width: 740px;
+    height: 290px;
+    color: black;
+    background-color: #e1e1e1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.contest-sub-container{
+    width: 700px;
+    height: 250px;
+    background: none;
+    border: 3px solid #000ca7;
+    border-radius: 20px;
+    display: flex;
+}
+.contest-content{
+    font-weight: 500;
+    font-size: 14pt;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 3px;
+    text-align: justify;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+.contest-main-3{
+    margin-left: 80px;
+    height: 600px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contest-measure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.measure-box{
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #b7b7b7;
+    border-radius: 10px;
+    font-size: 35pt;
+}
+.measure-label{
+    font-size: 20pt;
+    font-weight: 500;
+}
+.letter{
+    color:#4B4B4B;
+}
+.letter-current{
+    color:#4B4B4B;
+}
+.letter-correct{
+    color: #2CB616;
+}
+.letter-wrong{
+    color: red;
+}
+
+.result-main{
+    color: #b7b7b7;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    margin-left: 50px;
+}
+.result-main-1{
+    display: flex;
+    justify-content: center;
+    font-family: "mySeFont";
+    font-style: italic;
+    font-size: 45pt;
+}
+.result-main-2{
+    display: flex;
+    justify-content: center;
+    font-family: "mySiFont";
+    font-size: 35pt;
+    margin-bottom: 50px;
+}
+.result-main-2 h1{
+    font-weight: 500;
+}
+.result-main-3{
+    display: flex;
+    justify-content: space-between;
+    font-family: "myFiFont";
+}
+.result-measure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+@media only screen and (max-width: 1090px){
+    body{
+        background: black;
+    }
+}
