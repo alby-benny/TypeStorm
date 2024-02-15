@@ -235,7 +235,7 @@ function starter(){
 
 function update_cpm(){
     cpm;
-    if(1-minutes!=0 && minutes!=undefined){
+    if(10-minutes!=0 && minutes!=undefined){
         cpm=Math.floor(word_count/(1-minutes));
     }
     else{
@@ -264,7 +264,7 @@ if (rand_key == "") {
 } 
 
 let cpm;
-var countdownTime = 1 * 60;
+var countdownTime = 10 * 60;
 let interval;
 let minutes;
 var start_game=0;
