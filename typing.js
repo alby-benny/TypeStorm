@@ -204,7 +204,10 @@ function updateTimer() {
     if (seconds < 10) {
         seconds = "0" + seconds;
     }
-
+    if(last_min!=minutes){
+        update_cpm();
+        last_min=minutes;
+    }
     // Update the timer element
     
     console.log(minutes+":"+seconds);
@@ -253,7 +256,7 @@ var para="The hefty opinion reveals itself as a sterile peer-to-peer to those wh
 document.getElementsByClassName("contest-main-content")[0].innerHTML=formatWord();
 
 
-
+let last_min=-1;
 var real_text="";
 
 
